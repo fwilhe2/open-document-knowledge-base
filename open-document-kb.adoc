@@ -24,5 +24,14 @@ Florian Wilhelm
 <table:table-cell office:value-type="string" calcext:value-type="string">
     <text:p>a</text:p>
 </table:table-cell>
+<table:table-cell office:value="1.2345" office:value-type="float" calcext:value-type="float" />
+<table:table-cell office:date-value="2022-02-02" table:style-name="DATE_STYLE" office:value-type="date" calcext:value-type="date" />
+<table:table-cell office:time-value="PT19H03M00S" table:style-name="TIME_STYLE" office:value-type="time" calcext:value-type="time" />
+<table:table-cell office:value="2.22" table:style-name="EUR_STYLE" office:value-type="currency" office:currency="EUR" calcext:value-type="currency" />
+<table:table-cell office:value="-4.99" table:style-name="EUR_STYLE" office:value-type="currency" office:currency="EUR" calcext:value-type="currency" />
+<table:table-cell office:value="0.4223" table:style-name="PERCENTAGE_STYLE" office:value-type="percentage" calcext:value-type="percentage" />
 ----
 
+== References
+
+https://www.oasis-open.org/committees/download.php/19274/OpenDocument-v1.0ed2-cs1.pdf
