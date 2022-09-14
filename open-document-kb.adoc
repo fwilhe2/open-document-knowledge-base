@@ -1,0 +1,28 @@
+= Open Document KB
+Florian Wilhelm
+:reproducible:
+:listing-caption: Listing
+:source-highlighter: rouge
+// :pdf-theme: my-theme
+// :pdf-themesdir: {docdir}
+:toc:
+// Uncomment next line to add a title page (or set doctype to book)
+// :title-page:
+
+== Spreadsheet
+
+=== Flat Open Document Spreadsheet (fods)
+
+==== Table
+
+==== Row
+
+==== Cell
+
+[source,xml]
+----
+<table:table-cell office:value-type="string" calcext:value-type="string">
+    <text:p>a</text:p>
+</table:table-cell>
+----
+

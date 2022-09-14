@@ -1,4 +1,4 @@
-doc=my-document
+doc=open-document-kb
 OPTIONS=--destination-dir=output
 
 all: html pdf
