@@ -13,11 +13,21 @@ Florian Wilhelm
 
 === Flat Open Document Spreadsheet (fods)
 
+[Specification](https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#__RefHeading__1415024_253892949)
+
 ==== Table
+
+[Specification](https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#__RefHeading__1418514_253892949)
 
 ==== Row
 
+[Specification](http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#element-table_table-row)
+
 ==== Cell
+
+[Specification](http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#element-table_table-cell)
+
+[value-type](http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#attribute-office_value-type)
 
 [source,xml]
 ----
@@ -65,6 +75,11 @@ Florian Wilhelm
 ----
 <table:table-cell office:value="0.4223" table:style-name="PERCENTAGE_STYLE" office:value-type="percentage" calcext:value-type="percentage" />
 ----
+===== Boolean
+[source,xml]
+----
+<table:table-cell office:boolean-value="true" table:style-name="BOOLEAN_STYLE" office:value-type="boolean" calcext:value-type="boolean" />
+----
 ===== Formulae
 [source,xml]
 ----
@@ -89,3 +104,7 @@ Florian Wilhelm
 
 - https://www.oasis-open.org/committees/download.php/19274/OpenDocument-v1.0ed2-cs1.pdf
 - http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html
+- http://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part1-introduction.html
+- http://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part2-packages.html
+- http://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part3-schema.html
+- http://docs.oasis-open.org/office/OpenDocument/v1.3/OpenDocument-v1.3-part4-formula.html

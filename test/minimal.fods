@@ -56,6 +56,9 @@
             <number:text>%</number:text>
         </number:percentage-style>
         <style:style style:name="PERCENTAGE_STYLE" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="__PERCENTAGE_STYLE" />
+        <number:boolean-style style:name="BOOLEAN_STYLE">
+            <number:boolean/>
+        </number:boolean-style>
     </office:automatic-styles>
     <office:body>
         <office:spreadsheet>
@@ -73,6 +76,8 @@
                     <table:table-cell office:value="2.22" table:style-name="EUR_STYLE" office:value-type="currency" office:currency="EUR" calcext:value-type="currency" />
                     <table:table-cell office:value="-4.99" table:style-name="EUR_STYLE" office:value-type="currency" office:currency="EUR" calcext:value-type="currency" />
                     <table:table-cell office:value="0.4223" table:style-name="PERCENTAGE_STYLE" office:value-type="percentage" calcext:value-type="percentage" />
+                    <table:table-cell office:boolean-value="true" table:style-name="BOOLEAN_STYLE" office:value-type="boolean" calcext:value-type="boolean" />
+                    <table:table-cell office:boolean-value="false" table:style-name="BOOLEAN_STYLE" office:value-type="boolean" calcext:value-type="boolean" />
                 </table:table-row>
             </table:table>
         </office:spreadsheet>
