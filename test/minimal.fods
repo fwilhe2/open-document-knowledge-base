@@ -11,6 +11,16 @@
             <style:map style:condition="value()&gt;=0" style:apply-style-name="___FLOAT_STYLE" />
         </number:number-style>
         <style:style style:name="FLOAT_STYLE" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="__FLOAT_STYLE" />
+        <number:number-style style:name="___INT_STYLE" style:volatile="true">
+            <number:number number:decimal-places="0" number:min-decimal-places="0" number:min-integer-digits="1" number:grouping="true" />
+        </number:number-style>
+        <number:number-style style:name="__INT_STYLE">
+            <style:text-properties fo:color="#ff0000" />
+            <number:text>-</number:text>
+            <number:number number:decimal-places="0" number:min-decimal-places="0" number:min-integer-digits="1" number:grouping="true" />
+            <style:map style:condition="value()&gt;=0" style:apply-style-name="___INT_STYLE" />
+        </number:number-style>
+        <style:style style:name="INT_STYLE" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="__INT_STYLE" />
         <number:date-style style:name="__DATE_STYLE">
             <number:year number:style="long" />
             <number:text>-</number:text>
@@ -56,6 +66,8 @@
                     </table:table-cell>
                     <table:table-cell office:value="1.2345" table:style-name="FLOAT_STYLE" office:value-type="float" calcext:value-type="float" />
                     <table:table-cell office:value="-9.9876" table:style-name="FLOAT_STYLE" office:value-type="float" calcext:value-type="float" />
+                    <table:table-cell office:value="1.2345" table:style-name="INT_STYLE" office:value-type="float" calcext:value-type="float" />
+                    <table:table-cell office:value="-9.9876" table:style-name="INT_STYLE" office:value-type="float" calcext:value-type="float" />
                     <table:table-cell office:date-value="2022-02-02" table:style-name="DATE_STYLE" office:value-type="date" calcext:value-type="date" />
                     <table:table-cell office:time-value="PT19H03M00S" table:style-name="TIME_STYLE" office:value-type="time" calcext:value-type="time" />
                     <table:table-cell office:value="2.22" table:style-name="EUR_STYLE" office:value-type="currency" office:currency="EUR" calcext:value-type="currency" />
