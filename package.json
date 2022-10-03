@@ -1,0 +1,8 @@
+{
+  "name": "open-document-knowledge-base",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "@prettier/plugin-xml": "^2.2.0"
+  }
+}
