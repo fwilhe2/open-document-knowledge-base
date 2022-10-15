@@ -1,0 +1,238 @@
+"COUNT", "COUNT", 0, 0, 0,  255, V, { RX }, FuncFlags::NONE
+"IF", "IF", 1, 1, 2, 3, R, { VO, RO }, FuncFlags::NONE
+"ISNA", "ISNA", 2, 2, 1, 1, V, { VR }, FuncFlags::NONE
+"ISERROR", "ISERROR", 3, 3, 1, 1, V, { VR }, FuncFlags::NONE
+"SUM", "SUM", 4, 4, 0,  255, V, { RX }, FuncFlags::NONE
+"AVERAGE", "AVERAGE", 5, 5, 1,  255, V, { RX }, FuncFlags::NONE
+"MIN", "MIN", 6, 6, 1,  255, V, { RX }, FuncFlags::NONE
+"MAX", "MAX", 7, 7, 1,  255, V, { RX }, FuncFlags::NONE
+"ROW", "ROW", 8, 8, 0, 1, V, { RO }, FuncFlags::NONE
+"COLUMN", "COLUMN", 9, 9, 0, 1, V, { RO }, FuncFlags::NONE
+"NA", "NA", 10, 10, 0, 0, V, {}, FuncFlags::NONE
+"NPV", "NPV", 11, 11, 2,  255, V, { VR, RX }, FuncFlags::NONE
+"STDEV", "STDEV", 12, 12, 1,  255, V, { RX }, FuncFlags::NONE
+"DOLLAR", "DOLLAR", 13, 13, 1, 2, V, { VR }, FuncFlags::NONE
+"FIXED", "FIXED", 14, 14, 1, 2, V, { VR, VR, C }, FuncFlags::NONE
+"SIN", "SIN", 15, 15, 1, 1, V, { VR }, FuncFlags::NONE
+"CSC", "SIN", 15, 15, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"COS", "COS", 16, 16, 1, 1, V, { VR }, FuncFlags::NONE
+"SEC", "COS", 16, 16, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"TAN", "TAN", 17, 17, 1, 1, V, { VR }, FuncFlags::NONE
+"COT", "TAN", 17, 17, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"ATAN", "ATAN", 18, 18, 1, 1, V, { VR }, FuncFlags::NONE
+"ACOT", "ATAN", 18, 18, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"PI", "PI", 19, 19, 0, 0, V, {}, FuncFlags::NONE
+"SQRT", "SQRT", 20, 20, 1, 1, V, { VR }, FuncFlags::NONE
+"EXP", "EXP", 21, 21, 1, 1, V, { VR }, FuncFlags::NONE
+"LN", "LN", 22, 22, 1, 1, V, { VR }, FuncFlags::NONE
+"LOG10", "LOG10", 23, 23, 1, 1, V, { VR }, FuncFlags::NONE
+"ABS", "ABS", 24, 24, 1, 1, V, { VR }, FuncFlags::NONE
+"INT", "INT", 25, 25, 1, 1, V, { VR }, FuncFlags::NONE
+"SIGN", "SIGN", 26, 26, 1, 1, V, { VR }, FuncFlags::NONE
+"ROUND", "ROUND", 27, 27, 2, 2, V, { VR }, FuncFlags::NONE
+"LOOKUP", "LOOKUP", 28, 28, 2, 3, V, { VR, RA }, FuncFlags::NONE
+"INDEX", "INDEX", 29, 29, 2, 4, R, { RA, VV }, FuncFlags::NONE
+"REPT", "REPT", 30, 30, 2, 2, V, { VR }, FuncFlags::NONE
+"MID", "MID", 31, 31, 3, 3, V, { VR }, FuncFlags::NONE
+"LEN", "LEN", 32, 32, 1, 1, V, { VR }, FuncFlags::NONE
+"VALUE", "VALUE", 33, 33, 1, 1, V, { VR }, FuncFlags::NONE
+"TRUE", "TRUE", 34, 34, 0, 0, V, {}, FuncFlags::NONE
+"FALSE", "FALSE", 35, 35, 0, 0, V, {}, FuncFlags::NONE
+"AND", "AND", 36, 36, 1,  255, V, { RX }, FuncFlags::NONE
+"OR", "OR", 37, 37, 1,  255, V, { RX }, FuncFlags::NONE
+"NOT", "NOT", 38, 38, 1, 1, V, { VR }, FuncFlags::NONE
+"MOD", "MOD", 39, 39, 2, 2, V, { VR }, FuncFlags::NONE
+"DCOUNT", "DCOUNT", 40, 40, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"DSUM", "DSUM", 41, 41, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"DAVERAGE", "DAVERAGE", 42, 42, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"DMIN", "DMIN", 43, 43, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"DMAX", "DMAX", 44, 44, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"DSTDEV", "DSTDEV", 45, 45, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"VAR", "VAR", 46, 46, 1,  255, V, { RX }, FuncFlags::NONE
+"DVAR", "DVAR", 47, 47, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"TEXT", "TEXT", 48, 48, 2, 2, V, { VR }, FuncFlags::NONE
+"LINEST", "LINEST", 49, 49, 1, 2, A, { RA, RA, C, C }, FuncFlags::NONE
+"TREND", "TREND", 50, 50, 1, 3, A, { RA, RA, RA, C }, FuncFlags::NONE
+"LOGEST", "LOGEST", 51, 51, 1, 2, A, { RA, RA, C, C }, FuncFlags::NONE
+"GROWTH", "GROWTH", 52, 52, 1, 3, A, { RA, RA, RA, C }, FuncFlags::NONE
+"PV", "PV", 56, 56, 3, 5, V, { VR }, FuncFlags::NONE
+"FV", "FV", 57, 57, 3, 5, V, { VR }, FuncFlags::NONE
+"NPER", "NPER", 58, 58, 3, 5, V, { VR }, FuncFlags::NONE
+"PMT", "PMT", 59, 59, 3, 5, V, { VR }, FuncFlags::NONE
+"RATE", "RATE", 60, 60, 3, 6, V, { VR }, FuncFlags::NONE
+"MIRR", "MIRR", 61, 61, 3, 3, V, { RA, VR }, FuncFlags::NONE
+"IRR", "IRR", 62, 62, 1, 2, V, { RA, VR }, FuncFlags::NONE
+"RAND", "RAND", 63, 63, 0, 0, V, {}, FuncFlags::VOLATILE
+"MATCH", "MATCH", 64, 64, 2, 3, V, { VR, RX, RR }, FuncFlags::NONE
+"DATE", "DATE", 65, 65, 3, 3, V, { VR }, FuncFlags::NONE
+"TIME", "TIME", 66, 66, 3, 3, V, { VR }, FuncFlags::NONE
+"DAY", "DAY", 67, 67, 1, 1, V, { VR }, FuncFlags::NONE
+"MONTH", "MONTH", 68, 68, 1, 1, V, { VR }, FuncFlags::NONE
+"YEAR", "YEAR", 69, 69, 1, 1, V, { VR }, FuncFlags::NONE
+"WEEKDAY", "WEEKDAY", 70, 70, 1, 1, V, { VR, C }, FuncFlags::NONE
+"HOUR", "HOUR", 71, 71, 1, 1, V, { VR }, FuncFlags::NONE
+"MINUTE", "MINUTE", 72, 72, 1, 1, V, { VR }, FuncFlags::NONE
+"SECOND", "SECOND", 73, 73, 1, 1, V, { VR }, FuncFlags::NONE
+"NOW", "NOW", 74, 74, 0, 0, V, {}, FuncFlags::VOLATILE
+"AREAS", "AREAS", 75, 75, 1, 1, V, { RO }, FuncFlags::NONE
+"ROWS", "ROWS", 76, 76, 1, 1, V, { RO }, FuncFlags::NONE
+"COLUMNS", "COLUMNS", 77, 77, 1, 1, V, { RO }, FuncFlags::NONE
+"OFFSET", "OFFSET", 78, 78, 3, 5, R, { RO, VR }, FuncFlags::VOLATILE
+"SEARCH", "SEARCH", 82, 82, 2, 3, V, { VR }, FuncFlags::NONE
+"TRANSPOSE", "TRANSPOSE", 83, 83, 1, 1, A, { VO }, FuncFlags::NONE
+"TYPE", "TYPE", 86, 86, 1, 1, V, { VX }, FuncFlags::NONE
+"ATAN2", "ATAN2", 97, 97, 2, 2, V, { VR }, FuncFlags::NONE
+"ASIN", "ASIN", 98, 98, 1, 1, V, { VR }, FuncFlags::NONE
+"ACOS", "ACOS", 99, 99, 1, 1, V, { VR }, FuncFlags::NONE
+"CHOOSE", "CHOOSE", 100, 100, 2,  255, R, { VO, RO }, FuncFlags::NONE
+"HLOOKUP", "HLOOKUP", 101, 101, 3, 3, V, { VV, RO, RO, C }, FuncFlags::NONE
+"VLOOKUP", "VLOOKUP", 102, 102, 3, 3, V, { VV, RO, RO, C }, FuncFlags::NONE
+"ISREF", "ISREF", 105, 105, 1, 1, V, { RX }, FuncFlags::NONE
+"LOG", "LOG", 109, 109, 1, 2, V, { VR }, FuncFlags::NONE
+"CHAR", "CHAR", 111, 111, 1, 1, V, { VR }, FuncFlags::NONE
+"LOWER", "LOWER", 112, 112, 1, 1, V, { VR }, FuncFlags::NONE
+"UPPER", "UPPER", 113, 113, 1, 1, V, { VR }, FuncFlags::NONE
+"PROPER", "PROPER", 114, 114, 1, 1, V, { VR }, FuncFlags::NONE
+"LEFT", "LEFT", 115, 115, 1, 2, V, { VR }, FuncFlags::NONE
+"RIGHT", "RIGHT", 116, 116, 1, 2, V, { VR }, FuncFlags::NONE
+"EXACT", "EXACT", 117, 117, 2, 2, V, { VR }, FuncFlags::NONE
+"TRIM", "TRIM", 118, 118, 1, 1, V, { VR }, FuncFlags::NONE
+"REPLACE", "REPLACE", 119, 119, 4, 4, V, { VR }, FuncFlags::NONE
+"SUBSTITUTE", "SUBSTITUTE", 120, 120, 3, 4, V, { VR }, FuncFlags::NONE
+"CODE", "CODE", 121, 121, 1, 1, V, { VR }, FuncFlags::NONE
+"FIND", "FIND", 124, 124, 2, 3, V, { VR }, FuncFlags::NONE
+"CELL", "CELL", 125, 125, 1, 2, V, { VV, RO }, FuncFlags::VOLATILE
+"ISERR", "ISERR", 126, 126, 1, 1, V, { VR }, FuncFlags::NONE
+"ISTEXT", "ISTEXT", 127, 127, 1, 1, V, { VR }, FuncFlags::NONE
+"ISNUMBER", "ISNUMBER", 128, 128, 1, 1, V, { VR }, FuncFlags::NONE
+"ISBLANK", "ISBLANK", 129, 129, 1, 1, V, { VR }, FuncFlags::NONE
+"T", "T", 130, 130, 1, 1, V, { RO }, FuncFlags::NONE
+"N", "N", 131, 131, 1, 1, V, { RO }, FuncFlags::NONE
+"DATEVALUE", "DATEVALUE", 140, 140, 1, 1, V, { VR }, FuncFlags::NONE
+"TIMEVALUE", "TIMEVALUE", 141, 141, 1, 1, V, { VR }, FuncFlags::NONE
+"SLN", "SLN", 142, 142, 3, 3, V, { VR }, FuncFlags::NONE
+"SYD", "SYD", 143, 143, 4, 4, V, { VR }, FuncFlags::NONE
+"DDB", "DDB", 144, 144, 4, 5, V, { VR }, FuncFlags::NONE
+"INDIRECT", "INDIRECT", 148, 148, 1, 2, R, { VR }, FuncFlags::VOLATILE
+"CLEAN", "CLEAN", 162, 162, 1, 1, V, { VR }, FuncFlags::NONE
+"MDETERM", "MDETERM", 163, 163, 1, 1, V, { VA }, FuncFlags::NONE
+"MINVERSE", "MINVERSE", 164, 164, 1, 1, A, { VA }, FuncFlags::NONE
+"MMULT", "MMULT", 165, 165, 2, 2, A, { VA }, FuncFlags::NONE
+"IPMT", "IPMT", 167, 167, 4, 6, V, { VR }, FuncFlags::NONE
+"PPMT", "PPMT", 168, 168, 4, 6, V, { VR }, FuncFlags::NONE
+"COUNTA", "COUNTA", 169, 169, 0,  255, V, { RX }, FuncFlags::NONE
+"PRODUCT", "PRODUCT", 183, 183, 0,  255, V, { RX }, FuncFlags::NONE
+"FACT", "FACT", 184, 184, 1, 1, V, { VR }, FuncFlags::NONE
+"DPRODUCT", "DPRODUCT", 189, 189, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"ISNONTEXT", "ISNONTEXT", 190, 190, 1, 1, V, { VR }, FuncFlags::NONE
+"STDEVP", "STDEVP", 193, 193, 1,  255, V, { RX }, FuncFlags::NONE
+"VARP", "VARP", 194, 194, 1,  255, V, { RX }, FuncFlags::NONE
+"DSTDEVP", "DSTDEVP", 195, 195, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"DVARP", "DVARP", 196, 196, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"TRUNC", "TRUNC", 197, 197, 1, 1, V, { VR, C }, FuncFlags::NONE
+"ISLOGICAL", "ISLOGICAL", 198, 198, 1, 1, V, { VR }, FuncFlags::NONE
+"DCOUNTA", "DCOUNTA", 199, 199, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"LINEST", "LINEST", 49, 49, 1, 4, A, { RA, RA, VV }, FuncFlags::NONE
+"TREND", "TREND", 50, 50, 1, 4, A, { RA, RA, RA, VV }, FuncFlags::NONE
+"LOGEST", "LOGEST", 51, 51, 1, 4, A, { RA, RA, VV }, FuncFlags::NONE
+"GROWTH", "GROWTH", 52, 52, 1, 4, A, { RA, RA, RA, VV }, FuncFlags::NONE
+"TRUNC", "TRUNC", 197, 197, 1, 2, V, { VR }, FuncFlags::NONE
+"DOLLAR", "USDOLLAR", 204, 204, 1, 2, V, { VR }, FuncFlags::IMPORTONLY
+"FINDB", "FINDB", 205, 205, 2, 3, V, { VR }, FuncFlags::NONE
+"SEARCHB", "SEARCHB", 206, 206, 2, 3, V, { VR }, FuncFlags::NONE
+"REPLACEB", "REPLACEB", 207, 207, 4, 4, V, { VR }, FuncFlags::NONE
+"LEFTB", "LEFTB", 208, 208, 1, 2, V, { VR }, FuncFlags::NONE
+"RIGHTB", "RIGHTB", 209, 209, 1, 2, V, { VR }, FuncFlags::NONE
+"MIDB", "MIDB", 210, 210, 3, 3, V, { VR }, FuncFlags::NONE
+"LENB", "LENB", 211, 211, 1, 1, V, { VR }, FuncFlags::NONE
+"ROUNDUP", "ROUNDUP", 212, 212, 2, 2, V, { VR }, FuncFlags::NONE
+"ROUNDDOWN", "ROUNDDOWN", 213, 213, 2, 2, V, { VR }, FuncFlags::NONE
+"ASC", "ASC", 214, 214, 1, 1, V, { VR }, FuncFlags::NONE
+"JIS", "DBCS", 215, 215, 1, 1, V, { VR }, FuncFlags::NONE
+"ADDRESS", "ADDRESS", 219, 219, 2, 5, V, { VR }, FuncFlags::NONE
+"DAYS360", "DAYS360", 220, 220, 2, 2, V, { VR, VR, C }, FuncFlags::NONE
+"TODAY", "TODAY", 221, 221, 0, 0, V, {}, FuncFlags::VOLATILE
+"VDB", "VDB", 222, 222, 5, 7, V, { VR }, FuncFlags::NONE
+"MEDIAN", "MEDIAN", 227, 227, 1,  255, V, { RX }, FuncFlags::NONE
+"SUMPRODUCT", "SUMPRODUCT", 228, 228, 1,  255, V, { VA }, FuncFlags::NONE
+"SINH", "SINH", 229, 229, 1, 1, V, { VR }, FuncFlags::NONE
+"CSCH", "SINH", 229, 229, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"COSH", "COSH", 230, 230, 1, 1, V, { VR }, FuncFlags::NONE
+"SECH", "COSH", 230, 230, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"TANH", "TANH", 231, 231, 1, 1, V, { VR }, FuncFlags::NONE
+"COTH", "TANH", 231, 231, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"ASINH", "ASINH", 232, 232, 1, 1, V, { VR }, FuncFlags::NONE
+"ACOSH", "ACOSH", 233, 233, 1, 1, V, { VR }, FuncFlags::NONE
+"ATANH", "ATANH", 234, 234, 1, 1, V, { VR }, FuncFlags::NONE
+"ACOTH", "ATANH", 234, 234, 1, 1, V, { VR }, FuncFlags::BIFFEXPORTONLY
+"DGET", "DGET", 235, 235, 3, 3, V, { RO, RR }, FuncFlags::NONE
+"INFO", "INFO", 244, 244, 1, 1, V, { VR }, FuncFlags::VOLATILE
+"FIXED", "FIXED", 14, 14, 1, 3, V, { VR }, FuncFlags::NONE
+"RANK", "RANK", 216, 216, 2, 3, V, { VR, RO, VR }, FuncFlags::NONE
+"DB", "DB", 247, 247, 4, 5, V, { VR }, FuncFlags::NONE
+"FREQUENCY", "FREQUENCY", 252, 252, 2, 2, A, { RA }, FuncFlags::NONE
+"ERROR.TYPE", "ERROR.TYPE", 261, 261, 1, 1, V, { VR }, FuncFlags::NONE
+"AVEDEV", "AVEDEV", 269, 269, 1,  255, V, { RX }, FuncFlags::NONE
+"BETADIST", "BETADIST", 270, 270, 3, 5, V, { VR }, FuncFlags::NONE
+"GAMMALN", "GAMMALN", 271, 271, 1, 1, V, { VR }, FuncFlags::NONE
+"BETAINV", "BETAINV", 272, 272, 3, 5, V, { VR }, FuncFlags::NONE
+"BINOMDIST", "BINOMDIST", 273, 273, 4, 4, V, { VR }, FuncFlags::NONE
+"LEGACY.CHIDIST", "CHIDIST", 274, 274, 2, 2, V, { VR }, FuncFlags::NONE
+"LEGACY.CHIINV", "CHIINV", 275, 275, 2, 2, V, { VR }, FuncFlags::NONE
+"COMBIN", "COMBIN", 276, 276, 2, 2, V, { VR }, FuncFlags::NONE
+"CONFIDENCE", "CONFIDENCE", 277, 277, 3, 3, V, { VR }, FuncFlags::NONE
+"CRITBINOM", "CRITBINOM", 278, 278, 3, 3, V, { VR }, FuncFlags::NONE
+"EVEN", "EVEN", 279, 279, 1, 1, V, { VR }, FuncFlags::NONE
+"EXPONDIST", "EXPONDIST", 280, 280, 3, 3, V, { VR }, FuncFlags::NONE
+"LEGACY.FDIST", "FDIST", 281, 281, 3, 3, V, { VR }, FuncFlags::NONE
+"LEGACY.FINV", "FINV", 282, 282, 3, 3, V, { VR }, FuncFlags::NONE
+"FISHER", "FISHER", 283, 283, 1, 1, V, { VR }, FuncFlags::NONE
+"FISHERINV", "FISHERINV", 284, 284, 1, 1, V, { VR }, FuncFlags::NONE
+"COM.MICROSOFT.FLOOR", "FLOOR", 285, 285, 2, 2, V, { VR }, FuncFlags::NONE
+"GAMMADIST", "GAMMADIST", 286, 286, 4, 4, V, { VR }, FuncFlags::NONE
+"GAMMAINV", "GAMMAINV", 287, 287, 3, 3, V, { VR }, FuncFlags::NONE
+"COM.MICROSOFT.CEILING", "CEILING", 288, 288, 2, 2, V, { VR }, FuncFlags::NONE
+"HYPGEOMDIST", "HYPGEOMDIST", 289, 289, 4, 4, V, { VR }, FuncFlags::NONE
+"LOGNORMDIST", "LOGNORMDIST", 290, 290, 3, 3, V, { VR }, FuncFlags::NONE
+"LOGINV", "LOGINV", 291, 291, 3, 3, V, { VR }, FuncFlags::NONE
+"NEGBINOMDIST", "NEGBINOMDIST", 292, 292, 3, 3, V, { VR }, FuncFlags::NONE
+"NORMDIST", "NORMDIST", 293, 293, 4, 4, V, { VR }, FuncFlags::NONE
+"LEGACY.NORMSDIST", "NORMSDIST", 294, 294, 1, 1, V, { VR }, FuncFlags::NONE
+"NORMINV", "NORMINV", 295, 295, 3, 3, V, { VR }, FuncFlags::NONE
+"LEGACY.NORMSINV", "NORMSINV", 296, 296, 1, 1, V, { VR }, FuncFlags::NONE
+"STANDARDIZE", "STANDARDIZE", 297, 297, 3, 3, V, { VR }, FuncFlags::NONE
+"ODD", "ODD", 298, 298, 1, 1, V, { VR }, FuncFlags::NONE
+"PERMUT", "PERMUT", 299, 299, 2, 2, V, { VR }, FuncFlags::NONE
+"POISSON", "POISSON", 300, 300, 3, 3, V, { VR }, FuncFlags::NONE
+"LEGACY.TDIST", "TDIST", 301, 301, 3, 3, V, { VR }, FuncFlags::NONE
+"WEIBULL", "WEIBULL", 302, 302, 4, 4, V, { VR }, FuncFlags::NONE
+"SUMXMY2", "SUMXMY2", 303, 303, 2, 2, V, { VA }, FuncFlags::NONE
+"SUMX2MY2", "SUMX2MY2", 304, 304, 2, 2, V, { VA }, FuncFlags::NONE
+"SUMX2PY2", "SUMX2PY2", 305, 305, 2, 2, V, { VA }, FuncFlags::NONE
+"LEGACY.CHITEST", "CHITEST", 306, 306, 2, 2, V, { VA }, FuncFlags::NONE
+"CORREL", "CORREL", 307, 307, 2, 2, V, { VA }, FuncFlags::NONE
+"COVAR", "COVAR", 308, 308, 2, 2, V, { VA }, FuncFlags::NONE
+"FORECAST", "FORECAST", 309, 309, 3, 3, V, { VR, VA }, FuncFlags::NONE
+"FTEST", "FTEST", 310, 310, 2, 2, V, { VA }, FuncFlags::NONE
+"INTERCEPT", "INTERCEPT", 311, 311, 2, 2, V, { VA }, FuncFlags::NONE
+"PEARSON", "PEARSON", 312, 312, 2, 2, V, { VA }, FuncFlags::NONE
+"RSQ", "RSQ", 313, 313, 2, 2, V, { VA }, FuncFlags::NONE
+"STEYX", "STEYX", 314, 314, 2, 2, V, { VA }, FuncFlags::NONE
+"SLOPE", "SLOPE", 315, 315, 2, 2, V, { VA }, FuncFlags::NONE
+"TTEST", "TTEST", 316, 316, 4, 4, V, { VA, VA, VR }, FuncFlags::NONE
+"PROB", "PROB", 317, 317, 3, 4, V, { VA, VA, VR }, FuncFlags::NONE
+"DEVSQ", "DEVSQ", 318, 318, 1,  255, V, { RX }, FuncFlags::NONE
+"GEOMEAN", "GEOMEAN", 319, 319, 1,  255, V, { RX }, FuncFlags::NONE
+"HARMEAN", "HARMEAN", 320, 320, 1,  255, V, { RX }, FuncFlags::NONE
+"SUMSQ", "SUMSQ", 321, 321, 0,  255, V, { RX }, FuncFlags::NONE
+"KURT", "KURT", 322, 322, 1,  255, V, { RX }, FuncFlags::NONE
+"SKEW", "SKEW", 323, 323, 1,  255, V, { RX }, FuncFlags::NONE
+"ZTEST", "ZTEST", 324, 324, 2, 3, V, { RX, VR }, FuncFlags::NONE
+"LARGE", "LARGE", 325, 325, 2, 2, V, { RX, VR }, FuncFlags::NONE
+"SMALL", "SMALL", 326, 326, 2, 2, V, { RX, VR }, FuncFlags::NONE
+"QUARTILE", "QUARTILE", 327, 327, 2, 2, V, { RX, VR }, FuncFlags::NONE
+"PERCENTILE", "PERCENTILE", 328, 328, 2, 2, V, { RX, VR }, FuncFlags::NONE
+"PERCENTRANK", "PERCENTRANK", 329, 329, 2, 3, V, { RX, VR, VR_E }, FuncFlags::NONE
+"MODE", "MODE", 330, 330, 1,  255, V, { VA }, FuncFlags::NONE
+"TRIMMEAN", "TRIMMEAN", 331, 331, 2, 2, V, { RX, VR }, FuncFlags::NONE
+"TINV", "TINV", 332, 332, 2, 2, V, { VR }, FuncFlags::NONE
