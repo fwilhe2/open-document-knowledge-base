@@ -1,0 +1,17 @@
+<spreadsheet>
+    <table name="Sheet1">
+        <row>
+            <cell type="string">
+                <text><![CDATA[abc]]></text>
+            </cell>
+            <cell type="currency-eur" value="12.23"></cell>
+            <cell type="float" value="234.3"></cell>
+            <cell type="int" value="345"></cell>
+            <cell type="formula" value="SUM(YEAR_2020)"></cell>
+        </row>
+    </table>
+    <named-expressions>
+        <named-range name="YEAR_2020" base-cell-address="Sheet1.$A$1"
+            cell-range-address="Sheet1.$A$1"></named-range>
+    </named-expressions>
+</spreadsheet>
