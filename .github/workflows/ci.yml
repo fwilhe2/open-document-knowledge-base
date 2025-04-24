@@ -19,12 +19,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - name: Build document
-      uses: devcontainers/ci@v0.3
+    - uses: ruby/setup-ruby@v1
       with:
-        imageName: ghcr.io/fwilhe2/doc-devcontainer
-        push: never
-        runCmd: make
+        ruby-version: '3.3'
+    - run: |
+        apt-get update && export DEBIAN_FRONTEND=noninteractive \
+            && apt-get -y install --no-install-recommends make wget
+    - run: gem install asciidoctor asciidoctor-pdf rouge
+    - name: Build document
+      run: make
     - uses: actions/upload-artifact@v4
       with:
         name: open-document-kb
