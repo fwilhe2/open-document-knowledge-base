@@ -9,33 +9,32 @@ Florian Wilhelm
 // Uncomment next line to add a title page (or set doctype to book)
 // :title-page:
 
+:link-fods: https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#__RefHeading__1415024_253892949
+:link-table: https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#__RefHeading__1418514_253892949
+:link-row: http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#element-table_table-row
+:link-cell: http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#element-table_table-cell
+:link-cell-value-type: http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#attribute-office_value-type
+
 == Spreadsheet
 
 === Flat Open Document Spreadsheet (fods)
 
-----
-https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#__RefHeading__1415024_253892949
-----
+{link-fods}[Reference]
 
 ==== Table
 
-----
-https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part3-schema/OpenDocument-v1.3-os-part3-schema.html#__RefHeading__1418514_253892949
-----
+{link-table}[Reference]
 
 ==== Row
 
-----
-http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#element-table_table-row
-----
+{link-row}[Reference]
 
 ==== Cell
 
-----
-http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#element-table_table-cell
+{link-cell}[Reference]
 
-http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#attribute-office_value-type[value-type]
-----
+{link-cell-value-type}[Value Type]
+
 
 [source,xml]
 ----
