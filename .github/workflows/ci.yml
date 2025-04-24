@@ -22,10 +22,7 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.3'
-    - run: |
-        apt-get update && export DEBIAN_FRONTEND=noninteractive \
-            && apt-get -y install --no-install-recommends make wget
-    - run: gem install asciidoctor asciidoctor-pdf rouge
+    - run: sudo gem install asciidoctor asciidoctor-pdf rouge
     - name: Build document
       run: make
     - uses: actions/upload-artifact@v4
