@@ -25,7 +25,7 @@ jobs:
     - run: sudo gem install asciidoctor asciidoctor-pdf rouge
     - name: Build document
       run: make
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v5
       with:
         name: open-document-kb
         path: |
