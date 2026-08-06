@@ -1,0 +1,54 @@
+<spreadsheet>
+    <table name="Sheet1">
+        <row>
+            <cell type="string"> <text><![CDATA[]]></text> </cell>
+            <cell type="string"> <text><![CDATA[2020]]></text> </cell>
+            <cell type="string"> <text><![CDATA[2021]]></text> </cell>
+            <cell type="string"> <text><![CDATA[2022]]></text> </cell>
+        </row>
+
+        <row>
+            <cell type="string"> <text><![CDATA[Acc 1]]></text> </cell>
+            <cell value="2.22" type="currency" currency="EUR" />
+            <cell value="3.22" type="currency" currency="EUR" />
+            <cell value="4.22" type="currency" currency="EUR" />
+        </row>
+
+        <row>
+            <cell type="string"> <text><![CDATA[Acc 2]]></text> </cell>
+            <cell value="5.22" type="currency" currency="EUR" />
+            <cell value="6.22" type="currency" currency="EUR" />
+            <cell value="9.22" type="currency" currency="EUR" />
+        </row>
+
+        <row>
+            <cell type="string"> <text><![CDATA[Acc 3]]></text> </cell>
+            <cell value="12.22" type="currency" currency="EUR" />
+            <cell value="13.22" type="currency" currency="EUR" />
+            <cell value="14.22" type="currency" currency="EUR" />
+        </row>
+
+        <row>
+            <cell type="string"> <text><![CDATA[Sum]]></text> </cell>
+            <cell formula="SUM(YEAR2020)" />
+            <cell formula="SUM(YEAR2021)" />
+            <cell formula="SUM(YEAR2022)" />
+        </row>
+
+        <row>
+            <cell type="string"> <text><![CDATA[Diff]]></text> </cell>
+            <cell type="string"> <text><![CDATA[]]></text> </cell>
+            <cell formula="(SUM2021 - SUM2020)" />
+            <cell formula="(SUM2022 - SUM2021)" />
+        </row>
+
+    </table>
+    <named-expressions>
+        <named-range name="YEAR2020" base-cell-address="$Sheet1.$B$2" cell-range-address="$Sheet1.$B$2:.$B$4" />
+        <named-range name="YEAR2021" base-cell-address="$Sheet1.$C$2" cell-range-address="$Sheet1.$C$2:.$C$4" />
+        <named-range name="YEAR2022" base-cell-address="$Sheet1.$D$2" cell-range-address="$Sheet1.$D$2:.$D$4" />
+        <named-range name="SUM2020" base-cell-address="$Sheet1.$B$5" cell-range-address="$Sheet1.$B$5" />
+        <named-range name="SUM2021" base-cell-address="$Sheet1.$C$5" cell-range-address="$Sheet1.$C$5" />
+        <named-range name="SUM2022" base-cell-address="$Sheet1.$D$5" cell-range-address="$Sheet1.$D$5" />
+    </named-expressions>
+</spreadsheet>

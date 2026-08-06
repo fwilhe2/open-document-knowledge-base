@@ -1,0 +1,16 @@
+<spreadsheet>
+    <table name="Sheet1">
+        <row>
+            <cell type="string">
+                <text><![CDATA[one]]></text>
+            </cell>
+        </row>
+    </table>
+    <table name="Sheet2">
+        <row>
+            <cell type="string">
+                <text><![CDATA[two]]></text>
+            </cell>
+        </row>
+    </table>
+</spreadsheet>
